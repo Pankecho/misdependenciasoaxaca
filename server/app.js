@@ -3,10 +3,12 @@ let path = require('path');
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
-
+let db=require('./models/db');
 let index = require('./routes/index');
 const api=require("./routes/api");
 
+const insertar=require('./initData');
+insertar();
 let app = express();
 
 // view engine setup
@@ -23,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use("/api",api);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'),
-        schema=mongoose.Schema;
+        Schema=mongoose.Schema;
 
 const TramiteSchema=new Schema({
     nombre:String,
@@ -21,5 +21,5 @@ const TramiteSchema=new Schema({
     categoria:[]    
 });        
 
-const Tramite=new mongoose.model('tramite',TramiteSchema); 
+const Tramite= mongoose.model('tramite',TramiteSchema); 
 module.exports=Tramite;
