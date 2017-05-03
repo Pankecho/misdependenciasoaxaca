@@ -1,0 +1,77 @@
+	{
+ 		"id":1,
+ 		"nombre":"OFICINAS CENTRALES",
+ 		"telefono":"(951) 502 62 31",
+ 		"direccion":"HEROICA ESCUELA NAVAL MILITAR No. 221 ESQ. EMILIO CARRANZA. COL. REFORMA. CP 68050",
+ 		"latitud":"17.0785925",
+ 		"longitud":"-96.7178707",
+ 		"idDependencia":1
+ 	},
+ 	 {
+ 		"id":2,
+ 		"nombre":"OFICINAS CENTRALES (MAO ANEXO)",
+ 		"direccion":"HEROICA ESCUELA NAVAL MILITAR No. 221 ESQ. EMILIO CARRANZA. COL. REFORMA. CP 68050",
+ 		"telefono":["(951) 502 62 31","(951) 502 62 32","(951) 502 62 33"],
+ 		"latitud":"17.0785925",
+ 		"longitud":"-96.7178707",
+ 		"idDependencia":1
+ 	},
+ 	 	{
+ 	 	"id":3,
+ 		"nombre":"HOSPITAL GENERAL “DR. AURELIO VALDIVIESO”",	
+ 		"direccion":"CALZADA PORFIRIO DIAZ NO. 400 COL. REFORMA. OAXACA DE JUAREZ OAXACA. CP 68050	",
+ 		"telefono":["(951) 513 46 12"],
+ 		"latitud":"17.0821309",
+ 		"longitud":"-96.7208367",
+ 		"idDependencia":1
+ 	},
+ 	 	{
+ 	 	"id":4,
+ 		"nombre":"HOSPITAL DE LA NIÑEZ OAXAQUEÑA",	
+ 		"direccion":"CARRETERA PUERTO ANGEL KM 12.5 SAN BARTOLO COYOTEPEC, OAXACA. CP 71256",
+ 		"telefono":["(951) 551 00 44"],
+ 		"latitud":"16.9591319",
+ 		"longitud":"-96.7093468",
+ 		"idDependencia":1
+ 	},
+ 	{	"id":5,
+ 		"nombre":"Módulo Oriente ",
+ 		"direccion":"Av. Universidad Col, Candiani",
+ 		"telefono":["144 85 17"],
+ 		"latitud":"17.0417836",
+ 		"longitud":"-96.7152412",
+ 		"idDependencia":2
+ 	}.
+ 	{	
+ 		"id":6,
+ 		"nombre":"Módulo Poniente",	
+ 		"direccion":"J. de D. Batiz No 342, Col. Vict.Srez.",
+ 		"telefono":["5162920"],
+ 		"latitud":"17.0757924",
+ 		"longitud":"-96.7464241",
+ 		"idDependencia":2
+ 	},
+ 	{	"id":7,
+ 		"nombre":"Módulo Centro",
+ 		"direccion":"Bustamante No 503, Col. Centro",
+ 		"telefono":["51 439 88"],
+ 		"latitud":"17.0559034",
+ 		"longitud":"-96.728144",
+ 		"idDependencia":2
+ 	},
+ 	{	"id":8,
+ 		"nombre":"Módulo Sur",
+ 		"direccion":"Prol. Gpe. Vict. No 342 Col. Libertad",
+ 		"telefono":["51 486 94"],
+ 		"latitud":"17.0644862",
+ 		"longitud":"-96.7392449",
+ 		"idDependencia":2
+ 	},
+ 	{	"id":9,
+ 		"nombre":"Módulo Norte",
+ 		"direccion":"M.S.Crespo N0.509 Col.Centro",
+ 		"telefono":[],
+ 		"latitud":"",
+ 		"longitud":"",
+ 		"idDependencia":2
+ 	}

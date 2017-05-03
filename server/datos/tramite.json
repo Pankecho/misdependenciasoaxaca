@@ -1,0 +1,24 @@
+{
+ "id":1,
+ "nombre": "Afiliación al seguro popular",
+ "requisitos": ["Comprobante reciente de domicilio (no mayor a 3 meses)","CURP o acta de nacimiento de todos los integrantes de la familia.",
+ 	"En el caso de recién nacidos, certificado de nacimiento.","Identificación oficial con fotografía del titular.","De ser el caso, comprobante de que eres beneficiario de algún programa de apoyo o subsidio del Gobierno Federal o comprobante que te acredite como parte de alguna colectividad.",
+ 	"Comprobante de estudios de los hijos o representados dependientes del titular de hasta 25 años de edad, de ser el caso.","Diagnóstico de embarazo, en caso de que alguna integrante de la familia se encuentre en dicho estado."],
+  "descripcion":"Trámite pertinente para la afliación al seguro popular",
+  "idDependencia":1
+ },
+ {"id":2,
+ "nombre": "Servicios de alcantarillado",
+ "requisitos": ["Dirección","Nombre del usuario","Número telefónico"],
+ "descripcion":"Atender las solicitudes del usuario, respecto al servicio de Alcantarillado.",
+  "idDependencia":2
+ },
+ {
+ "id":3,
+ "nombre": "Reparación o reposición de la toma de agua potable por fuga",
+ "requisitos": ["Dirección","Nombre del usuario","Número telefónico"],
+"descripcion":"Rehabilitar la toma de agua potable y/o revisión de válvula de inserción, cuando fue suspendida por fuga.",
+  "idDependencia":2
+}
+
+
