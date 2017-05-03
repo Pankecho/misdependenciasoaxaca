@@ -1,6 +1,6 @@
 var Sequelize = require("sequelize");
 
-database = new Sequelize("dependencias", "postgres", "", {
+database = new Sequelize("dependencias", "postgres", "israel123", {
 	host: "localhost",
 	dialect: "postgres",
 	pool: {
