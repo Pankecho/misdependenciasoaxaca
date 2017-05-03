@@ -14,7 +14,7 @@ const Tramite= database.define("tramite", {
             field:"nombre"},
     descripcion:{type:Sequelize.STRING,
             field:"descripcion"},
-    requisitos:{type:Sequelize.STRING,
+    requisitos:{type:Sequelize.STRING(1234),
             field:"requisitos"}
 }, {
 	timestamps: false,
