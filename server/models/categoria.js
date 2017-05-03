@@ -3,7 +3,7 @@ const database = require("./db")
 const Sequelize = require("./db")
 	.Sequelize;
 
-const Tramite= database.define("tramite", {
+const Categoria= database.define("categoria", {
 	id: {
 		type: Sequelize.INTEGER,
 		primaryKey: true,
@@ -11,15 +11,11 @@ const Tramite= database.define("tramite", {
 		field: "id"
 	},
     nombre:{type:Sequelize.STRING,
-            field:"nombre"},
-    descripcion:{type:Sequelize.STRING,
-            field:"descripcion"},
-    requisitos:{type:Sequelize.STRING,
-            field:"requisitos"}
+            field:"nombre"}
 }, {
 	timestamps: false,
 	freezeTableName: false,
-	tableName: "tramite"
+	tableName: "categoria"
 });
 
-module.exports = Tramite;
+module.exports = Categoria;

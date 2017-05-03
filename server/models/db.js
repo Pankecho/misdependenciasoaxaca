@@ -1,9 +1,28 @@
-const mongoose = require('mongoose');
+var Sequelize = require("sequelize");
 
-mongoose.connect('mongodb://127.0.0.1:27017/misdependencias');
+database = new Sequelize("dependencias", "postgres", "", {
+	host: "localhost",
+	dialect: "postgres",
+	pool: {
+		max: 10,
+		min: 0,
+		idle: 10000
+	},
+	logging: false
+		//	omitNull: true
+});
 
-const db = mongoose.connection;
-//db.on('connect',console.log('Conexion establecida'));
-db.on('error', console.error.bind(console, 'Connection error'));
 
-module.exports = db;
+database
+	.authenticate()
+	.then(function (err) {
+		console.log('Connection has been established successfully.');
+	})
+	.catch(function (err) {
+		console.log('Unable to connect to the database:', err);
+	});
+
+module.exports = {
+	database: database,
+	Sequelize: Sequelize
+}

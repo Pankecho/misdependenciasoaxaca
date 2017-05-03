@@ -3,13 +3,14 @@ let path = require('path');
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
-let db=require('./models/db');
+let conexion=require('./models/db');
 let index = require('./routes/index');
 const api=require("./routes/api");
 
-const insertar=require('./initData');
-insertar();
+
 let app = express();
+
+let dbRelations=require('./models/relations');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
