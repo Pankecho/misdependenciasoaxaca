@@ -87,5 +87,14 @@
 		"latitud":"17.0327462",
 		"longitud":"-96.7131164",
 		"idDependencia":3
+	},
+	{
+		"id":11,
+		"nombre": "HOSPITAL GENERAL DR. AURELIO VALDIVIESO",
+		"direccion":"CALZADA PORFIRIO DIAZ NO. 400 COL. REFORMA. OAXACA DE JUAREZ OAXACA. CP 68050",
+		"telefono": "(951) 513 46 12",
+		"latitud": "17.0821309",
+		"longitud": "-96.7208367",
+		"idDependencia": 4
 	}
 ]
