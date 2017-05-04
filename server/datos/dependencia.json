@@ -5,4 +5,13 @@
 {"id":2,
 "nombre":"Sapao",
 "web":"http://www.sapao.oaxaca.gob.mx",
+<<<<<<< HEAD
 "id_categoria":2}]
+=======
+"idCategoria":2},
+{"id":3,
+"nombre":"Sevitra",
+"web":"http://www.sevitra.oaxaca.gob.mx",
+"idCategoria":3
+}]
+>>>>>>> ce1c8900e95e8720d2d6d9f4b059eabd4dbaaeef

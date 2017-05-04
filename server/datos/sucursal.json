@@ -69,6 +69,19 @@
 		"telefono": "51 486 94",
 		"latitud": "17.0644862",
 		"longitud": "-96.7392449",
+<<<<<<< HEAD
 		"id_dependencia": 2
+=======
+		"idDependencia": 2
+	},
+	{
+		"id":9,
+		"nombre": "Secretaría de Vialidad y Transporte",
+		"direccion": "Av. Carlos Gracida número 9, San Antonio de la Cal Oaxaca, Oax. C.P. 71236",
+		"telefono":"50 150 00",
+		"latitud":"17.0327462",
+		"longitud":"-96.7131164",
+		"idDependencia":3
+>>>>>>> ce1c8900e95e8720d2d6d9f4b059eabd4dbaaeef
 	}
 ]
