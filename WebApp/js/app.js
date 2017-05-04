@@ -1,6 +1,6 @@
-var app = angular.module('appTodo', [
+var app = angular.module('ngMap', [
   'ngRoute',
-  'Controllers'
+  'controllers'
 ]);
 
 app.config(['$routeProvider',
