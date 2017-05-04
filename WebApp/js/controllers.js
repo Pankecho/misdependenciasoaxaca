@@ -52,6 +52,18 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
         })
     }
 
+    control.regresar=function(r){
+        switch(r){
+            case 1:control.mostrarSucursal=false;
+            control.verTramite=false;
+            control.verLista=true;
+            break;
+            case 2:
+            control.mostrarSucursal=false;
+            control.verTramite=true;
+            control.verLista=false;break;
+        }
+    }
 }]);
 
 

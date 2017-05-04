@@ -46,6 +46,7 @@ main{
 }
 
 .flex-container{
+	position:relative;
 	display: flex;		
 	align-items: center;
 	justify-content: center;
@@ -203,3 +204,30 @@ h2.title-map{
     	box-shadow: 0px 0px 1px #555;
 	}
 }
+
+span.button{
+	display: inline-block;
+	font-size: .8em;
+	position:absolute;
+	top:0px;
+	right:50px;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	box-shadow: 1px 2px 1px darken($primary,10);
+	background: darken($primary,5);
+	&:hover{
+		background: darken($primary,10);
+		cursor:pointer;
+	}
+	&:after{
+		content: '';
+    width: 20px;
+    display: block;
+    height: 5px;
+    background: #ecf0f1;
+    margin-left: 15px;
+    margin-top: 8px;
+	}
+}
+

@@ -88,6 +88,7 @@ main {
   position: relative; }
 
 .flex-container {
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -227,3 +228,26 @@ h2.title-map {
   .comments .item-comment {
     margin: 1em 0;
     box-shadow: 0px 0px 1px #555; }
+
+span.button {
+  display: inline-block;
+  font-size: .8em;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 1px #217dbb;
+  background: #258cd1; }
+  span.button:hover {
+    background: #217dbb;
+    cursor: pointer; }
+  span.button:after {
+    content: '';
+    width: 20px;
+    display: block;
+    height: 5px;
+    background: #ecf0f1;
+    margin-left: 15px;
+    margin-top: 8px; }
