@@ -57,6 +57,7 @@ router.get("/categorias", (req, res, next) => {
         .then((deps)=>{
             let data={id:c.id,nombre:c.nombre,
                         dependencias:deps}
+
             res.status(200)            
             .json({data:data});
         });}else{
@@ -64,9 +65,34 @@ router.get("/categorias", (req, res, next) => {
         }
     }) 
     .catch((e)=>{
-        res.status(500).json({message:"Error en el servidor"});
-        
-    })   
+        res.status(500).json({message:"Error en el servidor"});        
+    });   
+})
+.get('/categoria/:id/tramites',(req,res)=>{
+    const id=req.params.id;
+    Categoria.findById(id)
+    .then((c)=>{
+        if(c){
+            let query=`Select t.id, t.nombre,t.descripcion FROM tramite as t inner join dependencia as d on t.id_dependencia=d.id
+                        where d.id_categoria=${id}`;
+           db.query(query)
+           .then(d=>{
+                if(d[0].length>0){
+                    res.status(200).json({data:d[0]});
+                }else{
+                    res.status(200).json({message:"No hay datos a mostrar"})
+                }
+           })
+           .catch(e=>{
+               res.status(500).json({message:"Error en el servidor"});
+           });     
+        }else{
+             res.status(200).json({message:"No hay datos a mostrar"});
+        }
+    }) 
+    .catch((e)=>{
+        res.status(500).json({message:"Error en el servidor"});        
+    });
 })
 .get("/tramite/:id",(req,res)=>{
     const id=req.params.id;

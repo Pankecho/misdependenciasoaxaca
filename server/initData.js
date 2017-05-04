@@ -1,5 +1,4 @@
-const Tramite = require("./models/tramite"),
-        mongoose = require("mongoose");
+const Tramite = require("./models/tramite");
 
 function insertar() {
     Tramite.find({}, (err, data) => {
