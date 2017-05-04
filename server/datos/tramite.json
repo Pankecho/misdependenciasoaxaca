@@ -86,6 +86,62 @@
 "requisitos":"Solicitud de Renovación o Prorroga dirigida al Secretario de Vialidad y Transporte,Concesión o última renovación vencidad,Último trámite donde se reflejen los datos del vehículo,Licencia de chofer del beneficiario,Tarjeta de Circulación Actualizada,Póliza de seguro vigente tipo 3160 SMGVDF o UMA,RFC emitida por el SAT",
 "descripcion":"Mediante escrito libre el concesionario de servicio público de transporte, solicitará la renovación de la concesión que estén próximas a vencer, adjuntando los requisitos establecidos en la página oficial",
 "idDependencia":3
+},
+{
+"id":14,
+"nombre":"Atención a donadores de sangre",
+"requisitos":"Presentar Credencial oficial de Identificación del Instituto Nacional Electoral (INE).,Acudir en ayuno,Acudir sin desvelo., En caso de ser mujer, que no esté menstruando o que no esté embarazada,No consumir drogas,No consumir alcohol,No estar enfermo,Pesar mas de 50 kg,Que no haya ingerido medicamentos en las últimas 72 horas de solicitar el servicio",
+"descripcion":"Servicio dirigido a los familiares de pacientes o donadores voluntarios que requieren donar sangre y que permite a través de la valoración médico-clínica de laboratorio,",	
+"idDependencia":4
+},
+{
+"id":15,
+"nombre":"Estudios de laboratorio",
+"requisitos":"Presentar solicitud de estudios de laboratorio clínico expedidos por un médico del hospital, de otra unidad de salud o particular,Cubrir con los requisitos específicos de cada estudio indicado por el laboratorio clínico al momento deagendar la cita,Efectuar el pago correspondiente o en su caso si es beneficiario del seguro popular y este lo cubre,Presentar formato de pago con exención del mismo",
+"descripcion":"Realizar análisis de laboratorio de muestras de sangre, orina, excremento y otros fluidos corporales a pacientes provenientes de la consulta externa",
+"idDependencia":4
+},
+{
+"id":16,
+"nombre":"Estudios de Gabinete (Rayos X, Ultrasonido, Tomografía, Electroencefalograma)",
+"requisitos":" Presentar solicitud de estudios expedido por un médico del hospital, de otra unidad de salud o particular.,Cubrir con los requisitos específicos de cada estudio indicado por el área al momento de agendar la cita, Efectuar el pago correspondiente o la exención del mismo",	
+"descripcion":"Realizar estudios de imágen de rayos X, ultrasonido, tomografía y electroencefalograma",
+"idDependencia":4
+},
+{
+"id":17,
+"nombre":"Consulta externa",
+"requisitos":"Pacientes de primera vez: A) Ser valorados previamente por médico especialista de alguna institución pública o privada y que cuente con formato de referencia y contrarreferencia debidamente requisitado o bien resumen clínico. B) Podra acudir el solicitante de manera personal o bien solicitar la cita a través de trabajo social del hospital que refiere, de lunes a viernes de 8:00 a 20:00 horas y sábados de 8:00 a 13:00 horas al teléfono 01 (951) 55 100 44 y 55 100 38 extensión, 1203. Pacientes subsecuentes: A)Presentarse en el módulo de citas con el carnet respectivo o solicitar la cita a través del teléfono 01 (951) 55 100 44 y 55 100 38 extensión 1203, en horario de lunes a viernes de 8:00 a 20:00 horas y sábados de 8:00 a 13:00 horas.",
+"descripcion":"Brindar atención médica a través de la consulta de pediatría básica, odontología y psicología; así como de otras especialidades médicas",
+"idDependencia":4
+},
+{
+"id":17,
+"nombre":"Atención Médica de Urgencias ",
+"requisitos":"Presentarse en el módulo de urgencias, Solicitar la valoración de la urgencia,Esperar a la valoración o triagge, Esperar el tiempo necesario para la atención de acuerdo a la clasificación de la urgencia",
+"descripcion":"Atención de todo problema médico-quirúrgico que ponga en peligro la vida, un órgano, una función y que requiera atención inmediata",
+"idDependencia":4	
+},
+{
+"id":18,
+"nombre":"Hospitalización",
+"requisitos":"Para los pacientes provenientes de la consulta externa,A) Presentarse en trabajo social en la fecha señalada con orden de internamiento expedida por médico,tratante, póliza del seguro popular sí es beneficiario, en caso contrario presentar carta de no,derechohabiencia,B) Cumplir con los requisitos e indicaciones emitidas por el médico tratante,C) Acudir al Puesto de Sangrado con 2 donantes sean familiares o voluntarios,D) El padre, madre o responsable del menor presentará copia de identificación oficial,E) Acudir a Admisión Hospitalaria para firmar la hoja de autorización de internamiento.",
+"descripcion":"Atención médica-quirúrgica y de hospitalización de niños y niñas de 0 a 18 años de edad que requieran de internamiento por enfermedad y que ameritan vigilancia, manejo integral y multidisciplinario",
+"idDependencia":4
+},
+{
+"id":19,
+"nombre":"Solicitud para la autorización de un protocolo de investigación",
+"requisitos":"Completar la solicitud de autorización de proyectos de investigación (Anexo 1), El protocolo de investigación que presentará debe incluir todas las secciones enlistadas en el Anexo1, Toda la documentación se entregará en el Departamento de Investigación.",
+"descripcion":"Someter a autorización protocolos de investigación",
+"idDependencia":4
+},
+{
+"id":20,
+"nombre":"Atención a Solicitudes de Acceso a la Información Pública",
+"requisitos":"Cualquier persona, por si, o por medio de su representante, podrá presentar ante la Unidad de Enlace una solicitud de acceso a la información en forma verbal, mediante escrito libre, en formato, vía electrónica, (transparenciaenlachno@hotmail.com), personalmente o por el Sistema Electrónico de Acceso a la Información Pública (SIEAIP); www.sieaip.mx, la solicitud deberá contener: A) Nombre completo, B) Descripción clara de la información solicitada y datos adicionales que ayuden a localizarla, C) Domicilio o medio para recibir la información y avisos, D) Opcionalmente la modalidad que prefiere se otorgue el acceso a la información; podrá ser verbalmente siempre y cuando sea para fines de orientación mediante consulta directa",	
+"descripcion":"Atender las solicitudes de Acceso a la Información Pública",
+"idDependencia":4
 }]
 
 

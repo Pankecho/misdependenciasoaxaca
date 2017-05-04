@@ -10,4 +10,8 @@
 "nombre":"Sevitra",
 "web":"http://www.sevitra.oaxaca.gob.mx",
 "idCategoria":3
-}]
+},
+{"id":4,
+"nombre":"Hospital de la Niñez Oaxaqueña",
+"web":"http://www.hno.oaxaca.gob.mx",
+"idCategoria":1}]
