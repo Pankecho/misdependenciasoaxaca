@@ -19,7 +19,7 @@ $cambio:792px;
 }
 body{
 	background:$white;
-	font-family:'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
 }
 
@@ -36,9 +36,10 @@ body{
 		}		
 	}
 	img{		
-		width: 100px;
+		width: 80px;
 		height:80%;
 		align-self: center;
+		margin-right: 25px;
 	}
 	box-shadow: 1px 2px 1px darken($enfasis, 20);	
 }
