@@ -8,22 +8,8 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
 		$http.get('http://192.168.18.93:3000/api/busqueda/'+control.palabra)
 		.then(function(data){
 			control.tramites=data.data.data;
-		}
-			)
-	}
-}]);
-
-demoControllers.controller('tramite',['$scope','$http','$routeParams',function($scope,$http,$routeParams){
-  const control=this;
-	$http.get('http://192.168.18.93:3000/api/tramite/'+$routeParams.id).then(function(data){
-    control.tramite = data.data.data;
-    const datos = data.data.data;
-    console.log(data);
-			console.log(data);	
-			control.tramites=data.data.data
-			console.log(control.tramites)
-		});		
-	}
+		})
+	};
 }])
 .controller('sucursal',['$scope','$http','$routeParams',function($scope,$http,$routeParams){
     var control=this;
@@ -60,6 +46,7 @@ demoControllers.controller('tramite',['$scope','$http','$routeParams',function($
                   });
               console.log("b");
               var infoWindow = new google.maps.InfoWindow({map: map});
+              const array = datos.dependencia.sucursal;
               datos.dependencia.sucursales.forEach( function(element) {
                 const lat = parseFloat(element.latitud);
                 const lng = parseFloat(element.longitud);
@@ -90,6 +77,14 @@ demoControllers.controller('tramite',['$scope','$http','$routeParams',function($
                       bounds.extend(lol.position);
                       //map.setCenter(promedio);
                       map.fitBounds(bounds);
+
+                      if(array.length == 1){
+                        var directionsService = new google.maps.DirectionsService;
+                        var directionsDisplay = new google.maps.DirectionsRenderer;
+
+                        directionsDisplay.setMap(map);
+                        calculateAndDisplayRoute(directionsService, directionsDisplay,pos,new google.maps.LatLng(parseFloat(array[0].latitud),parseFloat(array[0].longitud)));
+                      }
                   },function() {
                       handleLocationError(true, infoWindow, map.getCenter());
                   });
@@ -109,3 +104,16 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                             'Error: El servicio de Geolocalización falló.' :
                             'Error: Tu navegador no soporta geolocalización.');
 }
+function calculateAndDisplayRoute(directionsService, directionsDisplay,posInicial,posFinal) {
+          directionsService.route({
+          origin: directi,
+          destination: document.getElementById('end').value,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
