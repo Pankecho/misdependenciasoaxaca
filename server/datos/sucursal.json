@@ -6,7 +6,7 @@
 		"direccion": "HEROICA ESCUELA NAVAL MILITAR No. 221 ESQ. EMILIO CARRANZA. COL. REFORMA. CP 68050",
 		"latitud": "17.0785925",
 		"longitud": "-96.7178707",
-		"idDependencia": 1
+		"id_dependencia": 1
 	},
 	{
 		"id": 2,
@@ -15,7 +15,7 @@
 		"telefono": "(951) 502 62 31",
 		"latitud": "17.0785925",
 		"longitud": "-96.7178707",
-		"idDependencia": 1
+		"id_dependencia": 1
 	},
 	{
 		"id": 3,
@@ -24,7 +24,7 @@
 		"telefono": "(951) 513 46 12",
 		"latitud": "17.0821309",
 		"longitud": "-96.7208367",
-		"idDependencia": 1
+		"id_dependencia": 1
 	},
 	{
 		"id": 4,
@@ -33,7 +33,7 @@
 		"telefono": "(951) 551 00 44",
 		"latitud": "16.9591319",
 		"longitud": "-96.7093468",
-		"idDependencia":1
+		"id_dependencia":1
 	},
 	{
 		"id": 5,
@@ -42,7 +42,7 @@
 		"telefono": "144 85 17",
 		"latitud": "17.0417836",
 		"longitud": "-96.7152412",
-		"idDependencia": 2
+		"id_dependencia": 2
 	},
 	{
 		"id": 6,
@@ -51,7 +51,7 @@
 		"telefono": "5162920",
 		"latitud": "17.0757924",
 		"longitud": "-96.7464241",
-		"idDependencia": 2
+		"id_dependencia": 2
 	},
 	{
 		"id": 7,
@@ -60,7 +60,7 @@
 		"telefono": "51 439 88",
 		"latitud": "17.0559034",
 		"longitud": "-96.728144",
-		"idDependencia": 2
+		"id_dependencia": 2
 	},
 	{
 		"id": 8,
@@ -69,6 +69,6 @@
 		"telefono": "51 486 94",
 		"latitud": "17.0644862",
 		"longitud": "-96.7392449",
-		"idDependencia": 2
+		"id_dependencia": 2
 	}
 ]

@@ -10,10 +10,10 @@ const dataCat=require('../datos/categoria'),
       dataSucur=require('../datos/sucursal');
 
 
-Categoria.belongsToMany(Dependencia,{through:'idCategoria'});
-Dependencia.belongsToMany(Tramite,{through:'idDependencia'});
-Dependencia.belongsToMany(Sucursal,{through:'idDependencia'});
-Sucursal.belongsToMany(Comentario,{through:'idSucursal'});
+Categoria.hasMany(Dependencia,{as:'idCategoria',foreignKey:'id_categoria'});
+Dependencia.hasMany(Tramite,{as:'idDependencia',foreignKey:'id_dependencia'});
+Dependencia.hasMany(Sucursal,{as:'idDependencia',foreignKey:'id_dependencia'});
+Sucursal.hasMany(Comentario,{as:'idSucursal',foreignKey:'id_sucursal'});
 
 Categoria.sync({force:true}).then(()=>{    
     Dependencia.sync({force:true}).then(()=>{
