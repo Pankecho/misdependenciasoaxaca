@@ -120,6 +120,44 @@ router.get("/categorias", (req, res, next) => {
     .catch((e)=>{        
         res.status(500).json({message:"Error en el servidor"});        
     });  
+})
+.get('/sucursal/:id',(req,res,next)=>{
+    const id=req.params.id;
+    Sucursal.findById(id)
+    .then(suc=>{
+        if(suc){
+            Comentario.findAll({where:{id_sucursal:suc.id},
+                                attributes:['id','descripcion','fecha']})
+            .then(comments=>{
+                let data={'id':suc.id,
+                        'nombre':suc.nombre,
+                        'telefono':suc.telefono,
+                        'direccion':suc.direccion,
+                        'latitud':suc.latitud,
+                        'longitud':suc.longitud,
+                        'comentarios':comments};
+                  res.status(200).json({data:data});      
+                });
+        }else{
+            res.status(200).json({message:"No hay datos disponibles"});
+        }
+    })
+    .catch(e=>{
+        res.status(500).json({message:"Error en el servidor"});
+    })
+})
+.post('/sucursal/:id/comentario',(req,res,next)=>{
+    const comentario={'descripcion':req.body.descripcion,
+                       'fecha':new Date(),
+                        'id_sucursal':req.params.id };
+
+    Comentario.create(comentario)
+    .then(c=>{        
+        res.status(200).json({message:"Comentario agregado",comentario:c});        
+    })
+    .catch(e=>{
+        res.status(500).json({message:"Error en el servidor"});
+    });                      
 });
 
 
