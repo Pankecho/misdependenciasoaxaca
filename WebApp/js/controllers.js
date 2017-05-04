@@ -11,7 +11,8 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
             control.mostrarSucursal=false;
             control.verTramite=false;
             control.verLista=true;
-			control.tramites=data.data.data;            
+			control.tramites=data.data.data;      
+            control.claseArriba='arriba';      
 		})
 	};
     control.mostrarTramite=function(id){
