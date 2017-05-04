@@ -1,24 +1,14 @@
-var app = angular.module('ngMap', [
-  'ngRoute',
-  'controllers'
-]);
+var app = angular.module('appDemo',['ngRoute','demoControllers']);
 
 app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {
         templateUrl: 'partials/inicio.html',
-        controller: 'inicio'
+        controller: 'inicio',
+        controllerAs: 'inicioController'
       }).
-      when('/busqueda/:palabra', {
-        templateUrl: 'partials/buscado.html',
-        controller: 'buscado'
-      }).
-      when('/:id_tramite',{
-        templateUrl: 'partials/tramite.html',
-        controller: 'tramite'
-      })
       otherwise({
         redirectTo: '/'
       });
-  }]);
+}]);
