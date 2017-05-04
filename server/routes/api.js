@@ -133,7 +133,7 @@ router.get("/categorias", (req, res, next) => {
                     t.nombre,
                     d.nombre as dependencia                                       
                     FROM tramite as t inner join dependencia as d ON t.id_dependencia=d.id  
-                    WHERE t.nombre like '%${filtro}%' or t.descripcion like '%${filtro}%';`)
+                    WHERE t.nombre ilike '%${filtro}%' or t.descripcion ilike '%${filtro}%';`)
     .then((d)=>{
         if(d[0].length>0)        
             res.status(200).json({data:d[0]});
