@@ -1,5 +1,4 @@
-[{
- "id":1,
+[{"id":1,
  "nombre": "Afiliación al seguro popular",
  "requisitos":"Comprobante reciente de domicilio (no mayor a 3 meses),CURP o acta de nacimiento de todos los integrantes de la familia., En el caso de recién nacidos, certificado de nacimiento.,Identificación oficial con fotografía del titular.,De ser el caso, comprobante de que eres beneficiario de algún programa de apoyo o subsidio del Gobierno Federal o comprobante que te acredite como parte de alguna colectividad.,Comprobante de estudios de los hijos o representados dependientes del titular de hasta 25 años de edad, de ser el caso.,Diagnóstico de embarazo, en caso de que alguna integrante de la familia se encuentre en dicho estado.",
   "descripcion":"Trámite pertinente para la afliación al seguro popular",
@@ -17,6 +16,76 @@
  "requisitos": "Dirección,Nombre del usuario,Número telefónico",
 "descripcion":"Rehabilitar la toma de agua potable y/o revisión de válvula de inserción, cuando fue suspendida por fuga.",
   "idDependencia":2
+},
+{
+"id":4,
+"nombre":"Instalación de la toma de agua",
+"requisitos":"Formato de solicitud de instalación y/o regularización de servicios,Documento que acredite la propiedad o posesión del inmueble.,Identificación oficial con fotografía del propietario o representante legal en caso de persona moral,Comprobante del número oficial expedido por el H. Ayuntamiento.,Comprobante del número oficial expedido por el H. Ayuntamiento.,1 Croquis de localización del predio,Copia del pago de los derechos de conexión.,Copia del RFC en caso de persona moral.,Acta constitutiva en caso de persona moral.",
+"descripcion":"Conexión a la red de agua potable",
+"idDependencia":2
+},
+{
+"id":5,
+"nombre":"Regularización del servicio de agua potable y/o descarga de drenaje sanitario, por inmueble vació",
+"requisitos":"Formato de solicitud de instalación y/o regularización de servicios,título de propiedad.,identificación oficial con fotografía.,Comprobante del número oficial expedido por el ayuntamiento,1 Croquis de urbanización del predio",
+"descripcion":"Regularización del servicio, de agua potable y/o descarga de drenaje sanitario, donde no cuenten con la autorización de la Administración, para hacer uso de dichos servicios.",
+"idDependencia":2
+},
+{
+"id":6,
+"nombre":"Destape de toma de agua domiciliaria",
+"requisitos":"El servicio se solicita a través de las siguientes opciones:,Vía oficio dirigido al Director General de SAPAO,Vía telefónica al número 01 800 0 10 10 50 ext 304,Directamente al Depto. De Módulos de Servicio.,Al Depto. De Quejas y Denuncias al número. Telefónico,01 800 0 10 10 50 ext. 101.",
+"descripcion":"Habilitar el flujo de agua potable en la tubería de la toma domiciliaria, cuando la tubería se obstruye por sedimentación o en el caso de tuberías desgastadas.",
+"idDependencia":2
+},
+{
+"id":7,
+"nombre":"Instalación de una descarga de drenaje",
+"requisitos":"Formato de solicitud de instalación y/o regularización de servicios.,Documento que acredite la propiedad o posesión del inmueble.,Identificación oficial con fotografía del propietario o representante legal en caso de persona moral,Comprobante del número oficial expedido por el H. Ayuntamiento.,1 Croquis de localización del predio.,Copia del pago de los derechos de conexión.,Copia del RFC en caso de persona moral.,Acta constitutiva en caso de persona moral.",
+"descripcion":"Instalación de descarga de drenaje, al Sistema de Alcantarillado Sanitario.",
+"idDependencia":2
+},
+{
+"id":8,
+"nombre":"Cambio de usuario",
+"requisitos":"Contrato de arrendamiento o acta constitutiva,Copia del RFC,La cuenta del servicio no debe tener adeudo,Oficio dirigido al Director de SAPAO (solictando el cambio de usuario),Copia del IFE del apoderado",
+"descripcion":"El usuario solicita el cambio de USUARIO, de la cuenta del Servicio de agua potable, en el sistema SIAGUA.",
+"idDependencia":2
+},
+{
+"id":9,
+"nombre":"Cancelación del servicio de agua potable",
+"requisitos":"Oficio para solicitar la cancelación, dirigido al Director General de SAPAO.,Croquis de localización.,Copia de su último recibo de agua potable",
+"descripcion":"Cancelación definitiva de la toma del servicio de agua potable y baja definitiva de la cuenta, en el sistema Sicom.",
+"idDependencia":2
+},
+{
+"id":10,
+"nombre":"Constancia de no adeudo",
+"requisitos":"Estar actualizado en sus pagos, por el consumo de agua potable,Pagar el costo de la constancia ($150) en la caja de SAPAO,Tiket de pago por concepto de la constancia",
+"descripcion":"Se emite constancia de no adeudo, por el Servicio de Agua Potable y Alcantarillado.",
+"idDependencia":2
+},
+{
+"id":11,
+"nombre":"Expedición de Licencias",
+"requisitos":" Identificación oficial vigente (Credencial de elector, pasaporte o cédula profesional, Matricula Consular),Comprobante de domicilio; (agua, luz o teléfono, vigencia máxima 3 meses anteriores a la fecha del tramite),Comprobante del pago de derechos;",	
+"descripcion":"Este tipo de licencia la requieren todos los conductores de vehículos de dos, tres o cuatro ruedas, impulsados con motor de gasolina con transmisión de cadena o de flecha.",
+"idDependencia":3
+},
+{
+"id":12,
+"nombre":"Licencia para menores",
+"requisitos":"Credencial vigente con fotografía, expedida por instituciones educativas,Acta de nacimiento(Original),Comprobante de domicilio(Original y no mayor a 3 meses),Identificación oficial vigente del padre, madre o tutor(Original),Carta responsova firmada por el padre, madre o tutor, Comprobante de pago de derechos e impuestos",
+"descripcion":"Tramite para licencia de conducir para menores de edad(-18)",
+"idDependencia":3
+},
+{
+"id":13,
+"nombre":"Renovación de Consesión",
+"requisitos":"Solicitud de Renovación o Prorroga dirigida al Secretario de Vialidad y Transporte,Concesión o última renovación vencidad,Último trámite donde se reflejen los datos del vehículo,Licencia de chofer del beneficiario,Tarjeta de Circulación Actualizada,Póliza de seguro vigente tipo 3160 SMGVDF o UMA,RFC emitida por el SAT",
+"descripcion":"Mediante escrito libre el concesionario de servicio público de transporte, solicitará la renovación de la concesión que estén próximas a vencer, adjuntando los requisitos establecidos en la página oficial",
+"idDependencia":3
 }]
 
 
