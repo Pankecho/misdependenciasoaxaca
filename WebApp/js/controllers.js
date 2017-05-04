@@ -7,7 +7,6 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
 	this.buscar=function() {
 		$http.get('http://192.168.18.93:3000/api/busqueda/'+control.palabra)
 		.then(function(data){
-<<<<<<< HEAD
 			control.tramites=data.data.data;
 		}
 			)
@@ -20,7 +19,6 @@ demoControllers.controller('tramite',['$scope','$http','$routeParams',function($
     control.tramite = data.data.data;
     const datos = data.data.data;
     console.log(data);
-=======
 			console.log(data);	
 			control.tramites=data.data.data
 			console.log(control.tramites)
@@ -46,10 +44,13 @@ demoControllers.controller('tramite',['$scope','$http','$routeParams',function($
         })
     }
 }])
-.controller('tramite',['$scope','$http','$routeParams',function($scope,$http){
-	$http.get('http://192.168.18.93:3000/api/tramite/'+$routeParams.id_tramite).then(function(data){
->>>>>>> 01ea424b648a2ef8b55925a7d9db437eb12601a1
-		if(data){
+.controller('tramite',['$scope','$http','$routeParams',function($scope,$http,$routeParams){
+  const control=this;
+  $http.get('http://192.168.18.93:3000/api/tramite/'+$routeParams.id).then(function(data){
+    control.tramite = data.data.data;
+    const datos = data.data.data;
+    console.log(data);
+    if(data){
           var bounds = new google.maps.LatLngBounds();        
           var myLatLng = {lat: 18.245911, lng: -99.0506198};
           
@@ -99,7 +100,7 @@ demoControllers.controller('tramite',['$scope','$http','$routeParams',function($
         }else{
           document.getElementById("mapa").innerHtml("<h1>Error</h1><h3>No se ha encontrado el recurso</h3>");
         }
-	})
+  })
 }]);
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -107,9 +108,4 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setContent(browserHasGeolocation ?
                             'Error: El servicio de Geolocalización falló.' :
                             'Error: Tu navegador no soporta geolocalización.');
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 01ea424b648a2ef8b55925a7d9db437eb12601a1
