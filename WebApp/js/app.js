@@ -8,7 +8,7 @@ app.config(['$routeProvider',
         controller: 'inicio',
         controllerAs: 'inicioController'
       }).
-      when('/tramite/:id',{
+      when('/tramites/:id',{
         templateUrl: 'partials/tramite.html',
         controller: 'tramite',
         controllerAs: 'tramiteController'
