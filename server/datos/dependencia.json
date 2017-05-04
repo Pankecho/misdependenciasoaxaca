@@ -5,4 +5,13 @@
 {"id":2,
 "nombre":"Sapao",
 "web":"http://www.sapao.oaxaca.gob.mx",
-"idCategoria":2}]
+"idCategoria":2},
+{"id":3,
+"nombre":"Sevitra",
+"web":"http://www.sevitra.oaxaca.gob.mx",
+"idCategoria":3
+},
+{"id":4,
+"nombre":"Hospital de la Niñez Oaxaqueña",
+"web":"http://www.hno.oaxaca.gob.mx",
+"idCategoria":1}]
