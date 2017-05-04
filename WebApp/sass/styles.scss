@@ -29,14 +29,18 @@ body{
 	display: flex;
 	justify-content: center;
 	.header-title{
-		text-align: center;			
+		text-align: center;	
+		align-self: center;
+		@include to($cambio){
+			display: none;
+		}		
 	}
 	img{		
 		width: 100px;
 		height:80%;
 		align-self: center;
 	}
-	box-shadow: 1px 2px 1px darken($enfasis, 20);
+	box-shadow: 1px 2px 1px darken($enfasis, 20);	
 }
 
 
@@ -59,6 +63,9 @@ main{
 	&.column{
 		flex-direction: column;
 	}
+	@include to(m){		
+		flex-direction: column;
+	}
 }
 
 .form-busqueda{		
@@ -68,6 +75,10 @@ main{
     	font-size: 1.2em;
    		border: none;
     	box-shadow: 1px 2px 1px $dark;
+		@include to(m){
+			width: 90%;
+			margin-left:5%;
+		}
 	}
 	button{
 		border: none;    	
@@ -81,12 +92,21 @@ main{
 			background: darken($primary,10);
 			cursor:pointer;			
 		}
-		
+		@include to(m){			
+			margin-top:10px;
+			display:table;
+			margin-left:30%;			
+		}
 	}	
 }
 
 .lista{
-	margin:auto;	 	
+	margin:auto;
+	@include to(m){
+		width:90%;
+		margin-left:5%;
+	}
+
 }
 
 .link{	
@@ -109,7 +129,10 @@ main{
 			top:2px;
 			background: $enfasis;
 		}
-	
+	@include to(m){
+		width: 90%;
+		margin-left: 5%;
+	}
 }
 
 .container-info-mapa{
@@ -117,6 +140,9 @@ main{
 	justify-content: space-around;
 	width:80%;		
 	margin-top: 1.5em;
+	@include to(m){
+		flex-direction: column;
+	}
 }
 
 h2.title-map{
@@ -127,6 +153,9 @@ h2.title-map{
 	width:50%; 
 	margin:auto;
 
+	@include to(m){
+		width:100%;		
+	}
 .requisitos{
 	list-style: none;
 	padding-left: 1em;
@@ -140,6 +169,9 @@ h2.title-map{
 .mapa{
 	width:80%;
 	height:400px;	
+	@include to(m){
+		width:100%;
+	}
 }
 
 .info{
@@ -155,13 +187,20 @@ h2.title-map{
 
 .sucursal{
 	width: 75%;
+	@include to(m){
+		width: 100%;
+	}
+
 }
 
 .comments{
 	box-shadow: 0px 0px 1px darken($enfasis,10);
 	width:25%;
 	padding:.5em;
-
+	@include to(m){
+		width:100%;
+		margin-top:1.2em;
+	}
 	span{
 	text-align: center;
     display: inline-block;
@@ -228,6 +267,11 @@ span.button{
     background: #ecf0f1;
     margin-left: 15px;
     margin-top: 8px;
+	}
+	@include to(m){
+		position:fixed;
+		top:-60px;
+		right:0;
 	}
 }
 

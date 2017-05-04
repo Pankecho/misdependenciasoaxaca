@@ -74,7 +74,14 @@ body {
   justify-content: center;
   box-shadow: 1px 2px 1px #a82315; }
   .main-header .header-title {
-    text-align: center; }
+    text-align: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+    @media screen and (max-width: 791px) {
+      .main-header .header-title {
+        display: none; } }
   .main-header img {
     width: 100px;
     height: 80%;
@@ -111,6 +118,11 @@ main {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+  @media screen and (max-width: 639px) {
+    .flex-container {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .form-busqueda input[type=text] {
   width: 500px;
@@ -118,6 +130,10 @@ main {
   font-size: 1.2em;
   border: none;
   box-shadow: 1px 2px 1px #2c3e50; }
+  @media screen and (max-width: 639px) {
+    .form-busqueda input[type=text] {
+      width: 90%;
+      margin-left: 5%; } }
 
 .form-busqueda button {
   border: none;
@@ -130,9 +146,18 @@ main {
   .form-busqueda button:hover {
     background: #217dbb;
     cursor: pointer; }
+  @media screen and (max-width: 639px) {
+    .form-busqueda button {
+      margin-top: 10px;
+      display: table;
+      margin-left: 30%; } }
 
 .lista {
   margin: auto; }
+  @media screen and (max-width: 639px) {
+    .lista {
+      width: 90%;
+      margin-left: 5%; } }
 
 .link {
   display: block;
@@ -152,6 +177,10 @@ main {
     height: 10px;
     top: 2px;
     background: #e74c3c; }
+  @media screen and (max-width: 639px) {
+    .link {
+      width: 90%;
+      margin-left: 5%; } }
 
 .container-info-mapa {
   display: -webkit-flex;
@@ -162,6 +191,11 @@ main {
   justify-content: space-around;
   width: 80%;
   margin-top: 1.5em; }
+  @media screen and (max-width: 639px) {
+    .container-info-mapa {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 h2.title-map {
   text-align: center; }
@@ -169,6 +203,9 @@ h2.title-map {
 .tramite {
   width: 50%;
   margin: auto; }
+  @media screen and (max-width: 639px) {
+    .tramite {
+      width: 100%; } }
   .tramite .requisitos {
     list-style: none;
     padding-left: 1em; }
@@ -178,6 +215,9 @@ h2.title-map {
 .mapa {
   width: 80%;
   height: 400px; }
+  @media screen and (max-width: 639px) {
+    .mapa {
+      width: 100%; } }
 
 .info {
   width: 100%;
@@ -191,11 +231,18 @@ h2.title-map {
 
 .sucursal {
   width: 75%; }
+  @media screen and (max-width: 639px) {
+    .sucursal {
+      width: 100%; } }
 
 .comments {
   box-shadow: 0px 0px 1px #d62c1a;
   width: 25%;
   padding: .5em; }
+  @media screen and (max-width: 639px) {
+    .comments {
+      width: 100%;
+      margin-top: 1.2em; } }
   .comments span {
     text-align: center;
     display: inline-block;
@@ -251,3 +298,8 @@ span.button {
     background: #ecf0f1;
     margin-left: 15px;
     margin-top: 8px; }
+  @media screen and (max-width: 639px) {
+    span.button {
+      position: fixed;
+      top: -60px;
+      right: 0; } }
