@@ -1,6 +1,6 @@
 [{"id":1,
  "nombre": "Afiliación al seguro popular",
- "requisitos":"Comprobante reciente de domicilio (no mayor a 3 meses),CURP o acta de nacimiento de todos los integrantes de la familia., En el caso de recién nacidos, certificado de nacimiento.,Identificación oficial con fotografía del titular.,De ser el caso, comprobante de que eres beneficiario de algún programa de apoyo o subsidio del Gobierno Federal o comprobante que te acredite como parte de alguna colectividad.,Comprobante de estudios de los hijos o representados dependientes del titular de hasta 25 años de edad, de ser el caso.,Diagnóstico de embarazo, en caso de que alguna integrante de la familia se encuentre en dicho estado.",
+ "requisitos":"Comprobante reciente de domicilio (no mayor a 3 meses),CURP o acta de nacimiento de todos los integrantes de la familia., En el caso de recién nacidos; certificado de nacimiento.,Identificación oficial con fotografía del titular.,De ser el caso; comprobante de que eres beneficiario de algún programa de apoyo o subsidio del Gobierno Federal o comprobante que te acredite como parte de alguna colectividad.,Comprobante de estudios de los hijos o representados dependientes del titular de hasta 25 años de edad, Diagnóstico de embarazo; en caso de que alguna integrante de la familia se encuentre en dicho estado.",
   "descripcion":"Trámite pertinente para la afliación al seguro popular",
   "id_dependencia":1
  },
@@ -27,14 +27,14 @@
 {
 "id":5,
 "nombre":"Regularización del servicio de agua potable y/o descarga de drenaje sanitario, por inmueble vació",
-"requisitos":"Formato de solicitud de instalación y/o regularización de servicios,título de propiedad.,identificación oficial con fotografía.,Comprobante del número oficial expedido por el ayuntamiento,1 Croquis de urbanización del predio",
+"requisitos":"Formato de solicitud de instalación y/o regularización de servicios,Título de propiedad.,Identificación oficial con fotografía.,Comprobante del número oficial expedido por el ayuntamiento,1 Croquis de urbanización del predio",
 "descripcion":"Regularización del servicio, de agua potable y/o descarga de drenaje sanitario, donde no cuenten con la autorización de la Administración, para hacer uso de dichos servicios.",
 "id_dependencia":2
 },
 {
 "id":6,
 "nombre":"Destape de toma de agua domiciliaria",
-"requisitos":"El servicio se solicita a través de las siguientes opciones:,Vía oficio dirigido al Director General de SAPAO,Vía telefónica al número 01 800 0 10 10 50 ext 304,Directamente al Depto. De Módulos de Servicio.,Al Depto. De Quejas y Denuncias al número. Telefónico,01 800 0 10 10 50 ext. 101.",
+"requisitos":"El servicio se solicita a través de las siguientes opciones:,Vía oficio dirigido al Director General de SAPAO,Vía telefónica al número 01 800 0 10 10 50 ext 304,Directamente al Depto. De Módulos de Servicio.,Al Depto.",
 "descripcion":"Habilitar el flujo de agua potable en la tubería de la toma domiciliaria, cuando la tubería se obstruye por sedimentación o en el caso de tuberías desgastadas.",
 "id_dependencia":2
 },
@@ -55,63 +55,63 @@
 {
 "id":9,
 "nombre":"Cancelación del servicio de agua potable",
-"requisitos":"Oficio para solicitar la cancelación, dirigido al Director General de SAPAO.,Croquis de localización.,Copia de su último recibo de agua potable",
+"requisitos":"Oficio para solicitar la cancelación; dirigido al Director General de SAPAO.,Croquis de localización.,Copia de su último recibo de agua potable",
 "descripcion":"Cancelación definitiva de la toma del servicio de agua potable y baja definitiva de la cuenta, en el sistema Sicom.",
 "id_dependencia":2
 },
 {
 "id":10,
 "nombre":"Constancia de no adeudo",
-"requisitos":"Estar actualizado en sus pagos, por el consumo de agua potable,Pagar el costo de la constancia ($150) en la caja de SAPAO,Tiket de pago por concepto de la constancia",
+"requisitos":"Estar actualizado en sus pagos; por el consumo de agua potable,Pagar el costo de la constancia ($150) en la caja de SAPAO,Ticket de pago por concepto de la constancia",
 "descripcion":"Se emite constancia de no adeudo, por el Servicio de Agua Potable y Alcantarillado.",
 "id_dependencia":2
 },
 {
 "id":11,
 "nombre":"Expedición de Licencias",
-"requisitos":" Identificación oficial vigente (Credencial de elector, pasaporte o cédula profesional, Matricula Consular),Comprobante de domicilio; (agua, luz o teléfono, vigencia máxima 3 meses anteriores a la fecha del tramite),Comprobante del pago de derechos;",	
+"requisitos":" Identificación oficial vigente (Credencial de elector o pasaporte o cédula profesional),Comprobante de domicilio(agua luz o teléfono; vigencia máxima 3 meses anteriores a la fecha del tramite),Comprobante del pago de derechos",	
 "descripcion":"Este tipo de licencia la requieren todos los conductores de vehículos de dos, tres o cuatro ruedas, impulsados con motor de gasolina con transmisión de cadena o de flecha.",
 "id_dependencia":3
 },
 {
 "id":12,
 "nombre":"Licencia para menores",
-"requisitos":"Credencial vigente con fotografía, expedida por instituciones educativas,Acta de nacimiento(Original),Comprobante de domicilio(Original y no mayor a 3 meses),Identificación oficial vigente del padre, madre o tutor(Original),Carta responsova firmada por el padre, madre o tutor, Comprobante de pago de derechos e impuestos",
+"requisitos":"Credencial vigente con fotografía; expedida por instituciones educativas,Acta de nacimiento(Original),Comprobante de domicilio(Original y no mayor a 3 meses),Identificación oficial vigente del padre madre o tutor(Original),Carta responsiva firmada por el padre, madre o tutor, Comprobante de pago de derechos e impuestos",
 "descripcion":"Tramite para licencia de conducir para menores de edad(-18)",
 "id_dependencia":3
 },
 {
 "id":13,
 "nombre":"Renovación de Consesión",
-"requisitos":"Solicitud de Renovación o Prorroga dirigida al Secretario de Vialidad y Transporte,Concesión o última renovación vencidad,Último trámite donde se reflejen los datos del vehículo,Licencia de chofer del beneficiario,Tarjeta de Circulación Actualizada,Póliza de seguro vigente tipo 3160 SMGVDF o UMA,RFC emitida por el SAT",
+"requisitos":"Solicitud de Renovación o Prorroga dirigida al Secretario de Vialidad y Transporte,Concesión o última renovación vencida,Último trámite donde se reflejen los datos del vehículo,Licencia de chofer del beneficiario,Tarjeta de Circulación Actualizada,Póliza de seguro vigente tipo 3160 SMGVDF o UMA,RFC emitida por el SAT",
 "descripcion":"Mediante escrito libre el concesionario de servicio público de transporte, solicitará la renovación de la concesión que estén próximas a vencer, adjuntando los requisitos establecidos en la página oficial",
 "id_dependencia":3
 },
 {
 "id":14,
 "nombre":"Atención a donadores de sangre",
-"requisitos":"Presentar Credencial oficial de Identificación del Instituto Nacional Electoral (INE).,Acudir en ayuno,Acudir sin desvelo., En caso de ser mujer, que no esté menstruando o que no esté embarazada,No consumir drogas,No consumir alcohol,No estar enfermo,Pesar mas de 50 kg,Que no haya ingerido medicamentos en las últimas 72 horas de solicitar el servicio",
+"requisitos":"Presentar Credencial oficial de Identificación del Instituto Nacional Electoral (INE).,Acudir en ayuno,Acudir sin desvelo., En caso de ser mujer; que no esté menstruando o que no esté embarazada,No consumir drogas,No consumir alcohol,No estar enfermo,Pesar mas de 50 kg,Que no haya ingerido medicamentos en las últimas 72 horas de solicitar el servicio",
 "descripcion":"Servicio dirigido a los familiares de pacientes o donadores voluntarios que requieren donar sangre y que permite a través de la valoración médico-clínica de laboratorio,",	
 "id_dependencia":4
 },
 {
 "id":15,
 "nombre":"Estudios de laboratorio",
-"requisitos":"Presentar solicitud de estudios de laboratorio clínico expedidos por un médico del hospital, de otra unidad de salud o particular,Cubrir con los requisitos específicos de cada estudio indicado por el laboratorio clínico al momento deagendar la cita,Efectuar el pago correspondiente o en su caso si es beneficiario del seguro popular y este lo cubre,Presentar formato de pago con exención del mismo",
+"requisitos":"Presentar solicitud de estudios de laboratorio clínico expedidos por un médico del hospital; de otra unidad de salud o particular,Cubrir con los requisitos específicos de cada estudio indicado por el laboratorio clínico al momento deagendar la cita,Efectuar el pago correspondiente o en su caso si es beneficiario del seguro popular y este lo cubre,Presentar formato de pago con exención del mismo",
 "descripcion":"Realizar análisis de laboratorio de muestras de sangre, orina, excremento y otros fluidos corporales a pacientes provenientes de la consulta externa",
 "id_dependencia":4
 },
 {
 "id":16,
 "nombre":"Estudios de Gabinete (Rayos X, Ultrasonido, Tomografía, Electroencefalograma)",
-"requisitos":" Presentar solicitud de estudios expedido por un médico del hospital, de otra unidad de salud o particular.,Cubrir con los requisitos específicos de cada estudio indicado por el área al momento de agendar la cita, Efectuar el pago correspondiente o la exención del mismo",	
+"requisitos":" Presentar solicitud de estudios expedido por un médico del hospital; de otra unidad de salud o particular.,Cubrir con los requisitos específicos de cada estudio indicado por el área al momento de agendar la cita, Efectuar el pago correspondiente o la exención del mismo",	
 "descripcion":"Realizar estudios de imágen de rayos X, ultrasonido, tomografía y electroencefalograma",
 "id_dependencia":4
 },
 {
 "id":17,
 "nombre":"Consulta externa",
-"requisitos":"Pacientes de primera vez: A) Ser valorados previamente por médico especialista de alguna institución pública o privada y que cuente con formato de referencia y contrarreferencia debidamente requisitado o bien resumen clínico. B) Podra acudir el solicitante de manera personal o bien solicitar la cita a través de trabajo social del hospital que refiere, de lunes a viernes de 8:00 a 20:00 horas y sábados de 8:00 a 13:00 horas al teléfono 01 (951) 55 100 44 y 55 100 38 extensión, 1203. Pacientes subsecuentes: A)Presentarse en el módulo de citas con el carnet respectivo o solicitar la cita a través del teléfono 01 (951) 55 100 44 y 55 100 38 extensión 1203, en horario de lunes a viernes de 8:00 a 20:00 horas y sábados de 8:00 a 13:00 horas.",
+"requisitos":"Pacientes de primera vez: A) Ser valorados previamente por médico especialista de alguna institución pública o privada y que cuente con formato de referencia y contrarreferencia debidamente requisitado o bien resumen clínico. B) Podra acudir el solicitante de manera personal o bien solicitar la cita a través de trabajo social del hospital que refiere; de lunes a viernes de 8:00 a 20:00 horas y sábados de 8:00 a 13:00 horas,Pacientes subsecuentes: A)Presentarse en el módulo de citas con el carnet respectivo o solicitar la cita a través del teléfono 01 (951) 55 100 44 y 55 100 38 extensión 1203; en horario de lunes a viernes de 8:00 a 20:00 horas y sábados de 8:00 a 13:00 horas.",
 "descripcion":"Brindar atención médica a través de la consulta de pediatría básica, odontología y psicología; así como de otras especialidades médicas",
 "id_dependencia":4
 },
@@ -125,7 +125,7 @@
 {
 "id":19,
 "nombre":"Hospitalización",
-"requisitos":"Para los pacientes provenientes de la consulta externa,A) Presentarse en trabajo social en la fecha señalada con orden de internamiento expedida por médico,tratante, póliza del seguro popular sí es beneficiario, en caso contrario presentar carta de no,derechohabiencia,B) Cumplir con los requisitos e indicaciones emitidas por el médico tratante,C) Acudir al Puesto de Sangrado con 2 donantes sean familiares o voluntarios,D) El padre, madre o responsable del menor presentará copia de identificación oficial,E) Acudir a Admisión Hospitalaria para firmar la hoja de autorización de internamiento.",
+"requisitos":"Para los pacientes provenientes de la consulta externa,A) Presentarse en trabajo social en la fecha señalada con orden de internamiento expedida por médico tratante o póliza del seguro popular sí es beneficiario; en caso contrario presentar carta de no derechohabiencia,B) Cumplir con los requisitos e indicaciones emitidas por el médico tratante,C) Acudir al Puesto de Sangrado con 2 donantes sean familiares o voluntarios,D) El padre o madre o responsable del menor presentará copia de identificación oficial,E) Acudir a Admisión Hospitalaria para firmar la hoja de autorización de internamiento.",
 "descripcion":"Atención médica-quirúrgica y de hospitalización de niños y niñas de 0 a 18 años de edad que requieran de internamiento por enfermedad y que ameritan vigilancia, manejo integral y multidisciplinario",
 "id_dependencia":4
 },
@@ -139,7 +139,7 @@
 {
 "id":21,
 "nombre":"Atención a Solicitudes de Acceso a la Información Pública",
-"requisitos":"Cualquier persona, por si, o por medio de su representante, podrá presentar ante la Unidad de Enlace una solicitud de acceso a la información en forma verbal, mediante escrito libre, en formato, vía electrónica, (transparenciaenlachno@hotmail.com), personalmente o por el Sistema Electrónico de Acceso a la Información Pública (SIEAIP); www.sieaip.mx, la solicitud deberá contener: A) Nombre completo, B) Descripción clara de la información solicitada y datos adicionales que ayuden a localizarla, C) Domicilio o medio para recibir la información y avisos, D) Opcionalmente la modalidad que prefiere se otorgue el acceso a la información; podrá ser verbalmente siempre y cuando sea para fines de orientación mediante consulta directa",	
+"requisitos":"Cualquier persona por si o por medio de su representante; podrá presentar ante la Unidad de Enlace una solicitud de acceso a la información en forma verbal mediante escrito libre; en formato vía electrónica (transparenciaenlachno@hotmail.com) o personalmente o por el Sistema Electrónico de Acceso a la Información Pública (SIEAIP); "www.sieaip.mx" la solicitud deberá contener: ,A) Nombre completo, B) Descripción clara de la información solicitada y datos adicionales que ayuden a localizarla, C) Domicilio o medio para recibir la información y avisos, D) Opcionalmente la modalidad que prefiere se otorgue el acceso a la información; podrá ser verbalmente siempre y cuando sea para fines de orientación mediante consulta directa",	
 "descripcion":"Atender las solicitudes de Acceso a la Información Pública",
 "id_dependencia":4
 }]
