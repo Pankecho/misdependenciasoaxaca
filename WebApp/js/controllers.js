@@ -5,14 +5,11 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
 	control.palabra='';
 	control.tramites=[];
 	this.buscar=function() {
-		console.log(control.palabra)
 		$http.get('http://192.168.18.93:3000/api/busqueda/'+control.palabra)
 		.then(function(data){
-			console.log(data);	
-			control.tramites=data.data.data
-			console.log(control.tramites)
-		});		
-	}
+			control.tramites=data.data.data;
+		})
+	};
 }])
 .controller('sucursal',['$scope','$http','$routeParams',function($scope,$http,$routeParams){
     var control=this;
@@ -33,24 +30,31 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
         })
     }
 }])
-.controller('tramite',['$scope','$http','$routeParams',function($scope,$http){
-	$http.get('http://192.168.18.93:3000/api/tramite/'+$routeParams.id_tramite).then(function(data){
-		if(data){
+.controller('tramite',['$scope','$http','$routeParams',function($scope,$http,$routeParams){
+  const control=this;
+  $http.get('http://192.168.18.93:3000/api/tramite/'+$routeParams.id).then(function(data){
+    control.tramite = data.data.data;
+    const datos = data.data.data;
+    console.log(data);
+    if(data){
           var bounds = new google.maps.LatLngBounds();        
           var myLatLng = {lat: 18.245911, lng: -99.0506198};
-              var map = new google.maps.Map(document.getElementById('map'), {
+          
+              var map = new google.maps.Map(document.getElementById("view").getElementsByClassName("mapa")[0], {
                 center: myLatLng,
-                      zoom: 20
+                      zoom: 15
                   });
+              console.log("b");
               var infoWindow = new google.maps.InfoWindow({map: map});
-              data.dependencia.sucursales.forEach( function(element) {
+              const array = datos.dependencia.sucursal;
+              datos.dependencia.sucursales.forEach( function(element) {
                 const lat = parseFloat(element.latitud);
                 const lng = parseFloat(element.longitud);
                       var posicion = new google.maps.LatLng(lat,lng);
                 var marr = new google.maps.Marker({
                   position : posicion,
                       map: map,
-                      title: data.dependencia.nombre
+                      title: datos.dependencia.nombre
                 });
                 bounds.extend(marr.position);
                   });
@@ -73,6 +77,14 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
                       bounds.extend(lol.position);
                       //map.setCenter(promedio);
                       map.fitBounds(bounds);
+
+                      if(array.length == 1){
+                        var directionsService = new google.maps.DirectionsService;
+                        var directionsDisplay = new google.maps.DirectionsRenderer;
+
+                        directionsDisplay.setMap(map);
+                        calculateAndDisplayRoute(directionsService, directionsDisplay,pos,new google.maps.LatLng(parseFloat(array[0].latitud),parseFloat(array[0].longitud)));
+                      }
                   },function() {
                       handleLocationError(true, infoWindow, map.getCenter());
                   });
@@ -83,7 +95,7 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
         }else{
           document.getElementById("mapa").innerHtml("<h1>Error</h1><h3>No se ha encontrado el recurso</h3>");
         }
-	})
+  })
 }]);
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -92,4 +104,16 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                             'Error: El servicio de Geolocalización falló.' :
                             'Error: Tu navegador no soporta geolocalización.');
 }
-
+function calculateAndDisplayRoute(directionsService, directionsDisplay,posInicial,posFinal) {
+          directionsService.route({
+          origin: directi,
+          destination: document.getElementById('end').value,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
