@@ -9,12 +9,14 @@ app.config(['$routeProvider',
         controllerAs: 'inicioController'
       }).
       when('/tramite/:id',{
-        templateUrl: 'partial/tramite.html',
+        templateUrl: 'partials/tramite.html',
         controller: 'tramite',
         controllerAs: 'tramiteController'
       }).
-      when('/sucursal/:id',{
-        templateUrl: 'sucursal.html'
+      when('/:dependencia/sucursal/:id',{
+        templateUrl: 'partials/sucursal.html',
+        controller:'sucursal',
+        controllerAs:"sucursalController"
       }).
       otherwise({
         redirectTo: '/'

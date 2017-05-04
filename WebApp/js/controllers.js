@@ -1,6 +1,5 @@
 var demoControllers = angular.module('demoControllers', []);
 
-
 demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
 	const control=this;
 	control.palabra='';
@@ -12,23 +11,29 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
 			console.log(data);	
 			control.tramites=data.data.data
 			console.log(control.tramites)
-		}
-			)
-		
+		});		
 	}
-       /* $http.post('http://jsonplaceholder.typicode.com/posts', data).then(function (r) {
-            //cargarData();
-            
-            $scope.title = null;
-            $scope.body = null;
-        })*/
-}]);
-var controllers = angular.module('controllers', []);
-controllers.controller('inicio',['$scope','$http',function($scope,$http){
-}]);
+}])
+.controller('sucursal',['$scope','$http','$routeParams',function($scope,$http,$routeParams){
+    var control=this;
+    control.dependencia=$routeParams.dependencia;
+    $http.get('http://192.168.18.93:3000/api/sucursal/'+$routeParams.id)
+    .then(function(data){        
+        control.sucursal=data.data.data;
+        control.comentarios=control.sucursal.comentarios;        
+    });
 
-
-controllers.controller('tramite',['$scope','$http','$routeParams',function($scope,$http){
+    control.enviarComentario=function(){        
+        $http.post('http://192.168.18.93:3000/api/sucursal/'+$routeParams.id+'/comentario',
+        {
+            'descripcion':control.comentarioNuevo
+        }).then(function(data){        
+            control.comentarios.push(data.data.comentario);
+            control.comentarioNuevo='';
+        })
+    }
+}])
+.controller('tramite',['$scope','$http','$routeParams',function($scope,$http){
 	$http.get('http://192.168.18.93:3000/api/tramite/'+$routeParams.id_tramite).then(function(data){
 		if(data){
           var bounds = new google.maps.LatLngBounds();        
@@ -87,3 +92,4 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                             'Error: El servicio de Geolocalización falló.' :
                             'Error: Tu navegador no soporta geolocalización.');
 }
+
