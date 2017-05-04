@@ -74,8 +74,16 @@
 =======
 		"idDependencia": 2
 	},
+  	{	"id":9,
+  		"nombre":"Módulo Norte",
+  		"direccion":"M.S.Crespo N0.509 Col.Centro",
+  		"telefono":[],
+  		"latitud":"",
+  		"longitud":"",
+  		"idDependencia":2
+  	},
 	{
-		"id":9,
+		"id":10,
 		"nombre": "Secretaría de Vialidad y Transporte",
 		"direccion": "Av. Carlos Gracida número 9, San Antonio de la Cal Oaxaca, Oax. C.P. 71236",
 		"telefono":"50 150 00",
