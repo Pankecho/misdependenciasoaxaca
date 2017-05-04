@@ -1,7 +1,7 @@
 var Sequelize = require("sequelize");
 
+database = new Sequelize("dependencias", "postgres", "israel123", {
 
-database = new Sequelize("dependencias", "postgres", "kiraaeedu", {
 	host: "localhost",
 	dialect: "postgres",
 	pool: {
@@ -13,7 +13,7 @@ database = new Sequelize("dependencias", "postgres", "kiraaeedu", {
 		//	omitNull: true
 });
 
-
+ 
 database
 	.authenticate()
 	.then(function (err) {

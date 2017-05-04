@@ -131,11 +131,8 @@ router.get("/categorias", (req, res, next) => {
     const filtro=req.params.filtro;    
     db.query(`SELECT t.id, 
                     t.nombre,
-                    d.nombre as dependencia,
-                    d.id_categoria,
-                    c.nombre as categoria 
-                    FROM tramite as t inner join dependencia as d ON t.id_dependencia=d.id
-                        inner join  categoria as c ON c.id=d.id_categoria 
+                    d.nombre as dependencia                                       
+                    FROM tramite as t inner join dependencia as d ON t.id_dependencia=d.id  
                     WHERE t.nombre like '%${filtro}%' or t.descripcion like '%${filtro}%';`)
     .then((d)=>{
         if(d[0].length>0)        
