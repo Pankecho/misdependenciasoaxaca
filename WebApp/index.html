@@ -3,10 +3,16 @@
 <head>
     <title>Mis Dependencias</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <ng-view id="view"/>
+    <header class="main-header">
+        <h1 class="header-title">Dependencias Oaxaca</h1>
+    </header>
+    <main>
+        <ng-view id="view"/>
+    </main>
     <script src="js/api-google.min.js"></script>
     <script src="js/angular-1.5.11.min.js"></script>
     <script src="js/ng-map.min.js"></script>

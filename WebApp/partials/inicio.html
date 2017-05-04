@@ -1,21 +1,58 @@
- <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="jumbotron text-center">Dependencias Oaxaca</h1>
+    <form ng-submit="controller.buscar()" class="form-busqueda">	        
+		    <input type="text" class="form-control" placeholder="Busqueda" ng-model="controller.palabra" ng-required="true">
+		    <button type="submit" class="btn btn-default">Buscar</button>
+        </form>
 
-<h2 class="page-header">
-	Logo
-</h2>
+	<div class="lista" ng-show="controller.verLista">
+		<a ng-repeat='item in controller.tramites' ng-click="controller.mostrarTramite(item.id)" class="lista-item">{{item.nombre}}</a>
+	</div>
 
-<form ng-submit="inicioController.buscar()">
-	<div class="form-group">
-		<input type="text" class="form-control" placeholder="Busqueda" ng-model="inicioController.palabra" ng-required="true">
-		<button type="submit" class="btn btn-default">Buscar</button>
+	<div class="tramite" ng-show="controller.verTramite">
+		<h3>Tramite {{controller.tramite.nombre}}</h3>
+		<div class="row">
+		<label>Descripcion:</label>
+		<p>{{controller.tramite.descripcion}}</p>
+		</div>
+		<label for="">Requisitos</label>
+		<div class="row">
+			<ul>
+				<li ng-repeat="item in controller.tramite.requisitos">{{item}}</li>
+			</ul>
+		</div>
+		<div class="row">
+			<label>Dependencia: </label>
+			<p>{{controller.tramite.dependencia.nombre}}</p>
+		</div>	
+		<h3>Sucursales</h3>
+		<div class="row">
+			<a ng-repeat="suc in controller.tramite.dependencia.sucursales" 
+			ng-click="controller.verSucursal(suc.id)">
+				{{suc.nombre}}
+			</a>
+		</div>
+		<div class="mapa" style="height: 300px; width: 100%;"></div>
 	</div>
-	<div class="lista">
-		<a ng-repeat='item in inicioController.tramites' href="#/tramites/{{item.id}}" class="lista-item">{{item.nombre}}</a>
+
+	<div class="sucursal" ng-show="controller.mostrarSucursal">
+		<article>    
+        <h1 class="nombre">{{controller.dependencia}}</h1>        
+        <h2>{{controller.sucursal.nombre}}</h2>
+        <p class="sucursal-info"><span class="negrita">Teléfono: </span>{{controller.sucursal.telefono}}</p>
+        <p class="sucursal-info"><span class="negrita">Dirección: </span>{{controller.sucursal.direccion}}</p>
+
+		<div class="mapa" style="height: 300px; width: 100%;"></div>
+
+        <div class="comments">
+            <h3.comments-title>Comentarios</h3>
+            <p ng-show="controller.comentarios.length<1" class="info">No hay comentarios para ver</p>
+            <form ng-submit="controller.enviarComentario()">
+                <input type="text" class="comentario-text" ng-model="controller.comentarioNuevo" ng-required="true">
+                <input type="submit" value="Enviar comentario">
+            </form>
+            <div ng-hide="controller.comentarios.length<1" class="item-comment" ng-repeat="item in controller.comentarios">
+                <p class="fecha">{{item.fecha}}</p>    
+                <p class="item-comment-text">{{item.descripcion}}</p>
+            </div>
+        </div>    
+	</article>
 	</div>
-</form>
-</div>
-</div>
-</div>
