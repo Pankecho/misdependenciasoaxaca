@@ -8,11 +8,19 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
 		$http.get('http://192.168.18.93:3000/api/busqueda/'+control.palabra)
 		.then(function(data){
             control.palabra='';
+            control.tramites=[];
+            control.tramite={};
+            control.sucursal={};
             control.mostrarSucursal=false;
             control.verTramite=false;
             control.verLista=true;
 			control.tramites=data.data.data;      
-            control.claseArriba='arriba';      
+            control.claseArriba='arriba';
+            console.log(control.tramites)
+            if(control.tramites==undefined)
+                control.hayDatos=false;
+            else
+            control.hayDatos=true;
 		})
 	};
     control.mostrarTramite=function(id){
@@ -104,7 +112,8 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay,posInicia
                 var posicion = new google.maps.LatLng(lat,lng);
                 var marr = new google.maps.Marker({
                   position : posicion,
-                      map: map,                      
+                      map: map,   
+                      title: element.nombre                   
                 });
                 bounds.extend(marr.position);
                   });

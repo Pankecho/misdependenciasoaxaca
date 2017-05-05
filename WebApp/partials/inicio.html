@@ -1,19 +1,21 @@
 	<div class="flex-container busqueda" ng-class="controller.claseArriba">
     	<form ng-submit="controller.buscar()" class="form-busqueda" >	        
-		    <input type="text" class="form-control" placeholder="Busqueda" ng-model="controller.palabra" ng-required="true">
+		    <input type="text" class="form-control" placeholder="Busca tu trámite" ng-model="controller.palabra" ng-required="true">
 		    <button type="submit" class="btn btn-default">Buscar</button>
         </form>
 	</div>
 
 	<div class="flex-container" ng-class="controller.claseArriba"  ng-show="controller.verLista">
+		
 		<div class="lista">
+			<p class="info" ng-hide="controller.hayDatos">No hay resultados para su búsqueda</p>
 			<a ng-repeat='item in controller.tramites' 
 			ng-click="controller.mostrarTramite(item.id)" class="link">{{item.nombre}}</a>
 		</div>
 	</div>
 
 	<div class="flex-container column" ng-class="controller.claseArriba" ng-show="controller.verTramite">
-		<span class="button" ng-click="controller.regresar(1)">-</span>
+		<span class="button" ng-click="controller.regresar(1)"></span>
 		<h2 class="title-map">{{controller.tramite.nombre}}</h2>
 		<div class="container-info-mapa">			
 			<div class="tramite" >										
@@ -36,7 +38,7 @@
 	
 
 	<div class="flex-container column" ng-show="controller.mostrarSucursal" ng-class="controller.claseArriba">		       
-		<span class="button" ng-click="controller.regresar(2)">-</span>
+		<span class="button" ng-click="controller.regresar(2)"></span>
         <h2 class="title-map">{{controller.sucursal.nombre}}</h2>
 		<div class="container-info-mapa">
 			<div class="sucursal">

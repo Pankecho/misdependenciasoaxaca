@@ -49,7 +49,7 @@
 	},
 	{
 		"id": 8,
-		"nombre": "Cambio de usuario",
+		"nombre": "Cambio de usuario SIAGUA",
 		"requisitos": "Contrato de arrendamiento o acta constitutiva,Copia del RFC,La cuenta del servicio no debe tener adeudo,Oficio dirigido al Director de SAPAO (solictando el cambio de usuario),Copia del IFE del apoderado",
 		"descripcion": "El usuario solicita el cambio de USUARIO, de la cuenta del Servicio de agua potable, en el sistema SIAGUA.",
 		"id_dependencia": 2
@@ -84,7 +84,7 @@
 	},
 	{
 		"id": 13,
-		"nombre": "Renovación de Consesión",
+		"nombre": "Renovación de Concesión",
 		"requisitos": "Solicitud de Renovación o Prorroga dirigida al Secretario de Vialidad y Transporte,Concesión o última renovación vencida,Último trámite donde se reflejen los datos del vehículo,Licencia de chofer del beneficiario,Tarjeta de Circulación Actualizada,Póliza de seguro vigente tipo 3160 SMGVDF o UMA,RFC emitida por el SAT",
 		"descripcion": "Mediante escrito libre el concesionario de servicio público de transporte, solicitará la renovación de la concesión que estén próximas a vencer, adjuntando los requisitos establecidos en la página oficial",
 		"id_dependencia": 3
