@@ -1,8 +1,23 @@
 var Sequelize = require("sequelize");
 
-database = new Sequelize("dependencias", "postgres", "israel123", {
+// database = new Sequelize("TABD", "postgres", "Jpmr01495", {
 
-	host: "localhost",
+// 	host: "localhost",
+// 	dialect: "postgres",
+// 	pool: {
+// 		max: 10,
+// 		min: 0,
+// 		idle: 10000
+// 	},
+// 	logging: false
+// 		//	omitNull: true
+// });
+
+
+
+database = new Sequelize("mevkbpzs", "mevkbpzs", "fkhiho0w5snBcmFGZRl4hXo5lbrJ-XNS", {
+
+	host: "babar.elephantsql.com",
 	dialect: "postgres",
 	pool: {
 		max: 10,

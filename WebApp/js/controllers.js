@@ -5,7 +5,7 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
 	control.palabra='';
 	control.tramites=[];
 	this.buscar=function() {                
-		$http.get('http://192.168.18.93:3000/api/busqueda/'+control.palabra)
+		$http.get('http://localhost:3000/api/busqueda/'+control.palabra)
 		.then(function(data){
             control.palabra='';
             control.tramites=[];
@@ -28,7 +28,7 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
         control.verTramite=true;
         control.verLista=false;
 
-        $http.get('http://192.168.18.93:3000/api/tramite/'+id).then(function(data){
+        $http.get('http://localhost:3000/api/tramite/'+id).then(function(data){
         control.tramite = data.data.data;
         const datos = data.data.data;    
         if(data){
@@ -43,7 +43,7 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
         control.verTramite=false;
         control.verLista=false;
         control.dependencia=control.tramite.dependencia.nombre;         
-        $http.get('http://192.168.18.93:3000/api/sucursal/'+id)
+        $http.get('http://localhost:3000/api/sucursal/'+id)
         .then(function(data){        
             control.sucursal=data.data.data;
             control.comentarios=control.sucursal.comentarios; 
@@ -51,7 +51,7 @@ demoControllers.controller('inicio',['$scope','$http',function($scope,$http){
         });
     }
     control.enviarComentario=function(id){        
-        $http.post('http://192.168.18.93:3000/api/sucursal/'+id+'/comentario',
+        $http.post('http://localhost:3000/api/sucursal/'+id+'/comentario',
         {
             'descripcion':control.comentarioNuevo
         }).then(function(data){        
