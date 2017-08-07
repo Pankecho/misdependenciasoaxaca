@@ -10,7 +10,7 @@ const Dependencia = require('../models/dependencia'),
     Categoria = require('../models/categoria');
 
 
-router.get("/categorias", (req, res, next) => {
+router.get("/categoria", (req, res, next) => {
     Categoria.findAll({sort: 'id'})
     .then((d) => {
         if(d){
@@ -21,6 +21,20 @@ router.get("/categorias", (req, res, next) => {
     })
     .catch(e => {        
         res.sendStatus(500);        
+    });
+})
+
+.get("/tramite",(req,res,next) =>{
+    Tramite.findAll({sort: 'id'})
+    .then((d)=>{
+        if(d){
+            res.status(200).json(d);
+        }else{
+            res.sendStatus(200);
+        }
+    })
+    .catch(e => {
+        res.sendStatus(500);
     });
 })
 
@@ -51,7 +65,7 @@ router.get("/categorias", (req, res, next) => {
     })
 })
 
-.get("/categorias/:id", (req,res,next) => {
+.get("/categoria/:id", (req,res,next) => {
     const id = req.params.id;
     Categoria.findById(id)
         .then((c) => {
@@ -73,7 +87,7 @@ router.get("/categorias", (req, res, next) => {
         });   
 })
 
-.get('/categoria/:id/tramites',(req,res) => {
+.get('/categoria/:id/tramite',(req,res) => {
     const id = req.params.id;
     Categoria.findById(id)
         .then((c) => {
